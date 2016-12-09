@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="qXb-qC-GF7">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fZo-pK-tLx">
+                                <frame key="frameInset" minX="103" minY="284" width="248" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="临界区" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gOd-TU-DoK">
+                                        <frame key="frameInset" minX="8" minY="15" width="232" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.7493997322" blue="0.20263926560000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uit-Fy-Ckj" userLabel="分割线">
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="s3h-az-g3g"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="等待队列" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7R4-Kg-D3k">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="OV5-AU-ZAR"/>
+                                    <constraint firstAttribute="width" constant="163" id="jEJ-mG-vIl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="uit-Fy-Ckj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="0wT-C3-ES6"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="uit-Fy-Ckj" secondAttribute="bottom" constant="150" id="AQ0-m7-Vnc"/>
+                            <constraint firstItem="7R4-Kg-D3k" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pmr-Y3-ix6"/>
+                            <constraint firstItem="uit-Fy-Ckj" firstAttribute="top" secondItem="7R4-Kg-D3k" secondAttribute="bottom" constant="20" id="dJ7-YI-Zq9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uit-Fy-Ckj" secondAttribute="trailing" id="lf9-e9-mcc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="jPS-1z-dR4">
+                        <rightBarButtonItems>
+                            <barButtonItem title="全部进程一起申请进入临界区" id="QSk-TG-SpU">
+                                <connections>
+                                    <action selector="allProcessAskToEnterCriticalRegion:" destination="BYZ-38-t0r" id="XPQ-7z-q5e"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="创建进程" id="zkF-Rv-7hM">
+                                <connections>
+                                    <action selector="createProcess:" destination="BYZ-38-t0r" id="QJn-wd-sTb"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="criticalRegionView" destination="fZo-pK-tLx" id="jUa-B6-Mc2"/>
+                        <outlet property="divider" destination="uit-Fy-Ckj" id="ggB-Xb-6I4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="244" y="-34"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="FvU-M9-guO">
+            <objects>
+                <navigationController id="qXb-qC-GF7" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="b0x-XC-Ac4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="uXL-wm-r85"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iw3-zp-r5C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-574" y="284"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		33006BB11DF9605200C26B7B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 33006BB01DF9605200C26B7B /* main.m */; };
+		33006BB41DF9605200C26B7B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33006BB31DF9605200C26B7B /* AppDelegate.m */; };
+		33006BB71DF9605200C26B7B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33006BB61DF9605200C26B7B /* ViewController.m */; };
+		33006BBA1DF9605200C26B7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33006BB81DF9605200C26B7B /* Main.storyboard */; };
+		33006BBC1DF9605200C26B7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33006BBB1DF9605200C26B7B /* Assets.xcassets */; };
+		33006BBF1DF9605200C26B7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33006BBD1DF9605200C26B7B /* LaunchScreen.storyboard */; };
+		33006BCA1DF9605200C26B7B /* _________Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 33006BC91DF9605200C26B7B /* _________Tests.m */; };
+		33006BD51DF9605200C26B7B /* _________UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 33006BD41DF9605200C26B7B /* _________UITests.m */; };
+		33006BE51DF9616B00C26B7B /* JRProcessView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33006BE41DF9616B00C26B7B /* JRProcessView.m */; };
+		33006BE81DF962B200C26B7B /* JRMonitorProcessView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33006BE71DF962B200C26B7B /* JRMonitorProcessView.m */; };
+		33006BEB1DF962C600C26B7B /* JRUserProcessView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33006BEA1DF962C600C26B7B /* JRUserProcessView.m */; };
+		33006BED1DF96C0F00C26B7B /* JRUserProcessView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33006BEC1DF96C0F00C26B7B /* JRUserProcessView.xib */; };
+		33006BF11DF972B300C26B7B /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 33006BF01DF972B300C26B7B /* UIView+Extension.m */; };
+		33006BF51DF9804200C26B7B /* CreateProcessController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33006BF31DF9804200C26B7B /* CreateProcessController.m */; };
+		33006BF61DF9804200C26B7B /* CreateProcessController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33006BF41DF9804200C26B7B /* CreateProcessController.xib */; };
+		33006BF91DFA79D600C26B7B /* JRMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33006BF81DFA79D600C26B7B /* JRMessageView.m */; };
+		33006BFB1DFA7B9000C26B7B /* JRMessageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33006BFA1DFA7B9000C26B7B /* JRMessageView.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		33006BC61DF9605200C26B7B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33006BA41DF9605200C26B7B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33006BAB1DF9605200C26B7B;
+			remoteInfo = "多进程共享临界资源";
+		};
+		33006BD11DF9605200C26B7B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33006BA41DF9605200C26B7B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33006BAB1DF9605200C26B7B;
+			remoteInfo = "多进程共享临界资源";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		33006BAC1DF9605200C26B7B /* 多进程共享临界资源.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "多进程共享临界资源.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		33006BB01DF9605200C26B7B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		33006BB21DF9605200C26B7B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		33006BB31DF9605200C26B7B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		33006BB51DF9605200C26B7B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		33006BB61DF9605200C26B7B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		33006BB91DF9605200C26B7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		33006BBB1DF9605200C26B7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		33006BBE1DF9605200C26B7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		33006BC01DF9605200C26B7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33006BC51DF9605200C26B7B /* 多进程共享临界资源Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "多进程共享临界资源Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		33006BC91DF9605200C26B7B /* _________Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_________Tests.m"; sourceTree = "<group>"; };
+		33006BCB1DF9605200C26B7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33006BD01DF9605200C26B7B /* 多进程共享临界资源UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "多进程共享临界资源UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		33006BD41DF9605200C26B7B /* _________UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_________UITests.m"; sourceTree = "<group>"; };
+		33006BD61DF9605200C26B7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33006BE31DF9616B00C26B7B /* JRProcessView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRProcessView.h; sourceTree = "<group>"; };
+		33006BE41DF9616B00C26B7B /* JRProcessView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRProcessView.m; sourceTree = "<group>"; };
+		33006BE61DF962B200C26B7B /* JRMonitorProcessView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRMonitorProcessView.h; sourceTree = "<group>"; };
+		33006BE71DF962B200C26B7B /* JRMonitorProcessView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRMonitorProcessView.m; sourceTree = "<group>"; };
+		33006BE91DF962C600C26B7B /* JRUserProcessView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRUserProcessView.h; sourceTree = "<group>"; };
+		33006BEA1DF962C600C26B7B /* JRUserProcessView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRUserProcessView.m; sourceTree = "<group>"; };
+		33006BEC1DF96C0F00C26B7B /* JRUserProcessView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JRUserProcessView.xib; sourceTree = "<group>"; };
+		33006BEF1DF972B300C26B7B /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		33006BF01DF972B300C26B7B /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		33006BF21DF9804200C26B7B /* CreateProcessController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateProcessController.h; sourceTree = "<group>"; };
+		33006BF31DF9804200C26B7B /* CreateProcessController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateProcessController.m; sourceTree = "<group>"; };
+		33006BF41DF9804200C26B7B /* CreateProcessController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreateProcessController.xib; sourceTree = "<group>"; };
+		33006BF71DFA79D600C26B7B /* JRMessageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRMessageView.h; sourceTree = "<group>"; };
+		33006BF81DFA79D600C26B7B /* JRMessageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRMessageView.m; sourceTree = "<group>"; };
+		33006BFA1DFA7B9000C26B7B /* JRMessageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JRMessageView.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		33006BA91DF9605200C26B7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33006BC21DF9605200C26B7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33006BCD1DF9605200C26B7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		33006BA31DF9605200C26B7B = {
+			isa = PBXGroup;
+			children = (
+				33006BAE1DF9605200C26B7B /* 多进程共享临界资源 */,
+				33006BC81DF9605200C26B7B /* 多进程共享临界资源Tests */,
+				33006BD31DF9605200C26B7B /* 多进程共享临界资源UITests */,
+				33006BAD1DF9605200C26B7B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		33006BAD1DF9605200C26B7B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				33006BAC1DF9605200C26B7B /* 多进程共享临界资源.app */,
+				33006BC51DF9605200C26B7B /* 多进程共享临界资源Tests.xctest */,
+				33006BD01DF9605200C26B7B /* 多进程共享临界资源UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		33006BAE1DF9605200C26B7B /* 多进程共享临界资源 */ = {
+			isa = PBXGroup;
+			children = (
+				33006BE21DF960CF00C26B7B /* Class */,
+				33006BB21DF9605200C26B7B /* AppDelegate.h */,
+				33006BB31DF9605200C26B7B /* AppDelegate.m */,
+				33006BB51DF9605200C26B7B /* ViewController.h */,
+				33006BB61DF9605200C26B7B /* ViewController.m */,
+				33006BF21DF9804200C26B7B /* CreateProcessController.h */,
+				33006BF31DF9804200C26B7B /* CreateProcessController.m */,
+				33006BF41DF9804200C26B7B /* CreateProcessController.xib */,
+				33006BB81DF9605200C26B7B /* Main.storyboard */,
+				33006BBB1DF9605200C26B7B /* Assets.xcassets */,
+				33006BBD1DF9605200C26B7B /* LaunchScreen.storyboard */,
+				33006BC01DF9605200C26B7B /* Info.plist */,
+				33006BAF1DF9605200C26B7B /* Supporting Files */,
+			);
+			path = "多进程共享临界资源";
+			sourceTree = "<group>";
+		};
+		33006BAF1DF9605200C26B7B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				33006BB01DF9605200C26B7B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		33006BC81DF9605200C26B7B /* 多进程共享临界资源Tests */ = {
+			isa = PBXGroup;
+			children = (
+				33006BC91DF9605200C26B7B /* _________Tests.m */,
+				33006BCB1DF9605200C26B7B /* Info.plist */,
+			);
+			path = "多进程共享临界资源Tests";
+			sourceTree = "<group>";
+		};
+		33006BD31DF9605200C26B7B /* 多进程共享临界资源UITests */ = {
+			isa = PBXGroup;
+			children = (
+				33006BD41DF9605200C26B7B /* _________UITests.m */,
+				33006BD61DF9605200C26B7B /* Info.plist */,
+			);
+			path = "多进程共享临界资源UITests";
+			sourceTree = "<group>";
+		};
+		33006BE21DF960CF00C26B7B /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				33006BEE1DF972AD00C26B7B /* Extionsion */,
+				33006BE31DF9616B00C26B7B /* JRProcessView.h */,
+				33006BE41DF9616B00C26B7B /* JRProcessView.m */,
+				33006BE61DF962B200C26B7B /* JRMonitorProcessView.h */,
+				33006BE71DF962B200C26B7B /* JRMonitorProcessView.m */,
+				33006BE91DF962C600C26B7B /* JRUserProcessView.h */,
+				33006BEA1DF962C600C26B7B /* JRUserProcessView.m */,
+				33006BEC1DF96C0F00C26B7B /* JRUserProcessView.xib */,
+				33006BF71DFA79D600C26B7B /* JRMessageView.h */,
+				33006BF81DFA79D600C26B7B /* JRMessageView.m */,
+				33006BFA1DFA7B9000C26B7B /* JRMessageView.xib */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		33006BEE1DF972AD00C26B7B /* Extionsion */ = {
+			isa = PBXGroup;
+			children = (
+				33006BEF1DF972B300C26B7B /* UIView+Extension.h */,
+				33006BF01DF972B300C26B7B /* UIView+Extension.m */,
+			);
+			path = Extionsion;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		33006BAB1DF9605200C26B7B /* 多进程共享临界资源 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33006BD91DF9605200C26B7B /* Build configuration list for PBXNativeTarget "多进程共享临界资源" */;
+			buildPhases = (
+				33006BA81DF9605200C26B7B /* Sources */,
+				33006BA91DF9605200C26B7B /* Frameworks */,
+				33006BAA1DF9605200C26B7B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "多进程共享临界资源";
+			productName = "多进程共享临界资源";
+			productReference = 33006BAC1DF9605200C26B7B /* 多进程共享临界资源.app */;
+			productType = "com.apple.product-type.application";
+		};
+		33006BC41DF9605200C26B7B /* 多进程共享临界资源Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33006BDC1DF9605200C26B7B /* Build configuration list for PBXNativeTarget "多进程共享临界资源Tests" */;
+			buildPhases = (
+				33006BC11DF9605200C26B7B /* Sources */,
+				33006BC21DF9605200C26B7B /* Frameworks */,
+				33006BC31DF9605200C26B7B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				33006BC71DF9605200C26B7B /* PBXTargetDependency */,
+			);
+			name = "多进程共享临界资源Tests";
+			productName = "多进程共享临界资源Tests";
+			productReference = 33006BC51DF9605200C26B7B /* 多进程共享临界资源Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		33006BCF1DF9605200C26B7B /* 多进程共享临界资源UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33006BDF1DF9605200C26B7B /* Build configuration list for PBXNativeTarget "多进程共享临界资源UITests" */;
+			buildPhases = (
+				33006BCC1DF9605200C26B7B /* Sources */,
+				33006BCD1DF9605200C26B7B /* Frameworks */,
+				33006BCE1DF9605200C26B7B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				33006BD21DF9605200C26B7B /* PBXTargetDependency */,
+			);
+			name = "多进程共享临界资源UITests";
+			productName = "多进程共享临界资源UITests";
+			productReference = 33006BD01DF9605200C26B7B /* 多进程共享临界资源UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		33006BA41DF9605200C26B7B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = sky;
+				TargetAttributes = {
+					33006BAB1DF9605200C26B7B = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 5E5DYGDNY2;
+						ProvisioningStyle = Automatic;
+					};
+					33006BC41DF9605200C26B7B = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 5E5DYGDNY2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 33006BAB1DF9605200C26B7B;
+					};
+					33006BCF1DF9605200C26B7B = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 5E5DYGDNY2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 33006BAB1DF9605200C26B7B;
+					};
+				};
+			};
+			buildConfigurationList = 33006BA71DF9605200C26B7B /* Build configuration list for PBXProject "多进程共享临界资源" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 33006BA31DF9605200C26B7B;
+			productRefGroup = 33006BAD1DF9605200C26B7B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				33006BAB1DF9605200C26B7B /* 多进程共享临界资源 */,
+				33006BC41DF9605200C26B7B /* 多进程共享临界资源Tests */,
+				33006BCF1DF9605200C26B7B /* 多进程共享临界资源UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		33006BAA1DF9605200C26B7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33006BBF1DF9605200C26B7B /* LaunchScreen.storyboard in Resources */,
+				33006BBC1DF9605200C26B7B /* Assets.xcassets in Resources */,
+				33006BFB1DFA7B9000C26B7B /* JRMessageView.xib in Resources */,
+				33006BF61DF9804200C26B7B /* CreateProcessController.xib in Resources */,
+				33006BBA1DF9605200C26B7B /* Main.storyboard in Resources */,
+				33006BED1DF96C0F00C26B7B /* JRUserProcessView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33006BC31DF9605200C26B7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33006BCE1DF9605200C26B7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		33006BA81DF9605200C26B7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33006BE81DF962B200C26B7B /* JRMonitorProcessView.m in Sources */,
+				33006BE51DF9616B00C26B7B /* JRProcessView.m in Sources */,
+				33006BB71DF9605200C26B7B /* ViewController.m in Sources */,
+				33006BF51DF9804200C26B7B /* CreateProcessController.m in Sources */,
+				33006BF11DF972B300C26B7B /* UIView+Extension.m in Sources */,
+				33006BEB1DF962C600C26B7B /* JRUserProcessView.m in Sources */,
+				33006BB41DF9605200C26B7B /* AppDelegate.m in Sources */,
+				33006BB11DF9605200C26B7B /* main.m in Sources */,
+				33006BF91DFA79D600C26B7B /* JRMessageView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33006BC11DF9605200C26B7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33006BCA1DF9605200C26B7B /* _________Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33006BCC1DF9605200C26B7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33006BD51DF9605200C26B7B /* _________UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		33006BC71DF9605200C26B7B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 33006BAB1DF9605200C26B7B /* 多进程共享临界资源 */;
+			targetProxy = 33006BC61DF9605200C26B7B /* PBXContainerItemProxy */;
+		};
+		33006BD21DF9605200C26B7B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 33006BAB1DF9605200C26B7B /* 多进程共享临界资源 */;
+			targetProxy = 33006BD11DF9605200C26B7B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		33006BB81DF9605200C26B7B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33006BB91DF9605200C26B7B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		33006BBD1DF9605200C26B7B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33006BBE1DF9605200C26B7B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		33006BD71DF9605200C26B7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		33006BD81DF9605200C26B7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		33006BDA1DF9605200C26B7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5E5DYGDNY2;
+				INFOPLIST_FILE = "多进程共享临界资源/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sky.---------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		33006BDB1DF9605200C26B7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5E5DYGDNY2;
+				INFOPLIST_FILE = "多进程共享临界资源/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sky.---------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		33006BDD1DF9605200C26B7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 5E5DYGDNY2;
+				INFOPLIST_FILE = "多进程共享临界资源Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sky.---------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/多进程共享临界资源.app/多进程共享临界资源";
+			};
+			name = Debug;
+		};
+		33006BDE1DF9605200C26B7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 5E5DYGDNY2;
+				INFOPLIST_FILE = "多进程共享临界资源Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sky.---------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/多进程共享临界资源.app/多进程共享临界资源";
+			};
+			name = Release;
+		};
+		33006BE01DF9605200C26B7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 5E5DYGDNY2;
+				INFOPLIST_FILE = "多进程共享临界资源UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sky.---------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "多进程共享临界资源";
+			};
+			name = Debug;
+		};
+		33006BE11DF9605200C26B7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 5E5DYGDNY2;
+				INFOPLIST_FILE = "多进程共享临界资源UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sky.---------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "多进程共享临界资源";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		33006BA71DF9605200C26B7B /* Build configuration list for PBXProject "多进程共享临界资源" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33006BD71DF9605200C26B7B /* Debug */,
+				33006BD81DF9605200C26B7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33006BD91DF9605200C26B7B /* Build configuration list for PBXNativeTarget "多进程共享临界资源" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33006BDA1DF9605200C26B7B /* Debug */,
+				33006BDB1DF9605200C26B7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		33006BDC1DF9605200C26B7B /* Build configuration list for PBXNativeTarget "多进程共享临界资源Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33006BDD1DF9605200C26B7B /* Debug */,
+				33006BDE1DF9605200C26B7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		33006BDF1DF9605200C26B7B /* Build configuration list for PBXNativeTarget "多进程共享临界资源UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33006BE01DF9605200C26B7B /* Debug */,
+				33006BE11DF9605200C26B7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 33006BA41DF9605200C26B7B /* Project object */;
+}
